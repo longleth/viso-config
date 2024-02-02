@@ -1,31 +1,19 @@
 
-tracer:
-  property: DEFAULT CONFIGURATION
+test:
+  remote:
+    config:
+      property: HELLO
 
 spring:
   jpa:
     database: POSTGRESQL
     show-sql: true
-    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-#spring.jpa.show-sql: "true"
-#spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
-#spring.database.driverClassName: "org.postgresql.Driver"
-spring:
-  database:
-    driverClassName: org.postgresql.Driver
-
-#spring.datasource.platform: "postgres"
-spring:
   datasource:
-    platform: postgres
     url: jdbc:postgresql://localhost:5432/viso_db
     username: postgres
     password: p0stgr@s
     driver-class-name: org.postgresql.Driver
-#spring.datasource.username: "postgres"
-#spring.datasource.password: "p0stgr@s"
-#spring.datasource.driver-class-name: "org.postgresql.Driver"
-
-#spring.datasource.testWhileIdle: "true"
-#spring.datasource.validationQuery: "SELECT 1"
