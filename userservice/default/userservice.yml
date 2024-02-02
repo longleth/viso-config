@@ -16,5 +16,5 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/viso_db
     username: postgres
-    password: p0stgr@s
+    password: postgres
     driver-class-name: org.postgresql.Driver
