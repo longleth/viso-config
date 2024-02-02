@@ -11,6 +11,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        #default_schema: user_service_schema
 
   datasource:
     url: jdbc:postgresql://localhost:5432/viso_db
